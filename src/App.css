@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #131c22;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  text-align:left;
+  width:400px;
+  margin:auto ;
+  padding-top:50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container {
+  width:400px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:20px auto 0;
+  background-color:#34b4ec;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container input {
+  border:none;
+  flex-grow:1;
+  padding:10px;
+  font-size:1.3rem;
+}
+
+.input-container .fa-plus {
+  padding:10px;
+  font-size:1.5rem;
+}
+
+.input-container .fa-plus:active {
+  transform:scale(1.2);
+}
+
+ul .task-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+  width: 400px;
+  font-size: 1.3rem;
+  background-color: #1c536c;
+  color: white;
+}
+
+.task-value {
+  flex: 1;
+  padding: 0 5px;
+}
+
+input[type="checkbox"] {
+  height: 30px;
+  width: 40px;
+  margin-right:5px;
+  accent-color: green;
+}
+
+.fa-trash {
+  margin-left: 5px;
+  color: red;
+}
+
+.fa-trash:hover {
+  transform: scale(1.1);
+}
+
+li:nth-child(even) {
+  background-color:#5c90ac;
+}
+
+li:nth-child(odd) {
+  background-color:#1c536c;
 }
